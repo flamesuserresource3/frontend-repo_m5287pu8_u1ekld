@@ -6,21 +6,21 @@ const posts = [
     slug: 'inductie-matematica',
     date: '12 septembrie 2025',
     excerpt: 'Cum folosești corect inducția matematică pentru a demonstra proprietăți generale despre numere naturale.',
-    tags: ['Liceu', 'Teorie']
+    tags: ['Liceu', 'Teorie', 'LaTeX']
   },
   {
     title: 'Trucuri pentru ecuații cuadratice',
     slug: 'trucuri-ecuatii-cuadratice',
     date: '2 septembrie 2025',
-    excerpt: 'Identități, factorizări și metode rapide pentru a rezolva ecuațiile de gradul al doilea.',
-    tags: ['Gimnaziu', 'Tehnici']
+    excerpt: 'Identități, factorizări și metode rapide pentru a rezolva ecuațiile de gradul al doilea. Exemplu: x^2 + y^2 \\ge 2xy.',
+    tags: ['Gimnaziu', 'Tehnici', 'LaTeX']
   },
   {
     title: 'Inegalitatea lui Cauchy-Schwarz explicată',
     slug: 'cauchy-schwarz-explicata',
     date: '28 august 2025',
-    excerpt: 'Intuiție geometrică și aplicații ale uneia dintre cele mai importante inegalități.',
-    tags: ['Olimpiadă', 'Analiză']
+    excerpt: 'Intuiție geometrică și aplicații ale uneia dintre cele mai importante inegalități. Formulă: (a_1^2 + \\dots + a_n^2)(b_1^2 + \\dots + b_n^2) \\ge (a_1b_1 + \\dots + a_nb_n)^2.',
+    tags: ['Olimpiadă', 'Analiză', 'LaTeX']
   }
 ];
 
@@ -32,7 +32,7 @@ export default function BlogPreview() {
         <div className="mb-10 flex items-end justify-between gap-4">
           <div>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Articole recente</h2>
-            <p className="mt-2 max-w-xl text-violet-200/80">Un scurt preview al celor mai noi postări de pe blog.</p>
+            <p className="mt-2 max-w-xl text-violet-200/80">Articole optimizate pentru formule matematice (LaTeX suportat în paginile de detaliu).</p>
           </div>
           <a
             href="/blog"

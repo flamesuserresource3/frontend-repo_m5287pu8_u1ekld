@@ -1,16 +1,18 @@
 import React from 'react';
+import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
-import Offerings from './components/Offerings.jsx';
+import WhyUs from './components/WhyUs.jsx';
 import BlogPreview from './components/BlogPreview.jsx';
-import Footer from './components/Footer.jsx';
 
 function App() {
   return (
     <div className="min-h-screen w-full bg-black text-white">
+      <Navbar />
       <Hero />
-      <Offerings />
+      <div id="de-ce-noi">
+        <WhyUs />
+      </div>
       <BlogPreview />
-      <Footer />
     </div>
   );
 }
